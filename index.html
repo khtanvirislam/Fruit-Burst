@@ -52,25 +52,9 @@
   <body>
     <header class="">
       <!-- nav section -->
-      <nav class="">
-        <div class="navbar bg-base-100 h-16 bg-col-primary  text-white">
-          <div>
-            <img src="./images/logo.png" alt="">
-          </div>
-          <div class="navbar-start">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-              </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div>
-            <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
-          </div>
+      <nav class=" max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 mt-6 
+      ">
+        <div class="navbar flex justify-around bg-base-100 h-16 bg-col-primary rounded-full text-white">
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
               <li><a>Home</a></li>
@@ -79,14 +63,40 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <div class="block">
-            <input type="text" placeholder="Search here" class="input rounded-full max-w-xs"/> <i class="fa-solid fa-magnifying-glass"></i>
+
+          <!-- imgages -->
+          <div class="lg:pl-20">
+            <img class="h-10 " src="./images/logo.png" alt="">
+            <a class="btn btn-ghost normal-case pl-1 text-xl md:text-2xl lg:text-4xl">Fruit Burst</a>
           </div>
-        <!-- search bar manush korte hobe with chatgpt -->
+          <!-- menu section for small device -->
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-700 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>      
+          </div>
+            <!-- menu section for large device -->
+        
+          <!-- search bar -->
+          <div class="hidden lg:block bg-white p-2 gap-2 lg:rounded-full lg:flex items-center">
+            <input type="text" class="px-4 text-base text-black focus:outline-none " placeholder="Search here">
+            <i class="fas fa-search text-black mr-2"></i> 
+          </div>
+          
       </nav>
     </header>
 
     <main class="font-lato">
+
+    
     
     </main>
 
